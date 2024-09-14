@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+  />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <main>
+      <div class="pop-up" id="pop-up">
+        <span> Apakah agenda dan tanggal sudah benar :</span>
+        <span onclick="closePopup(); add();" class="tombol2">ADD</span>
+      </div>
+      <ul>
+        <!-- Item akan ditambahkan di sini -->
+      </ul>
+      <div class="data-user">
+        <span class="info">Nama : Mochamad Rifky Rifaldy </span>
+        <span class="info">Jabatan : Software Developer </span>
+        <div id="tanggal-hari-ini"></div>
+      </div>
+      <div class="kolom-input">
+        <div class="untuk-input">
+          <input
+            type="text"
+            class="input-agenda"
+            placeholder="tambahkan agenda...."
+          />
+        </div>
+        <img
+          src="calendar-days-svgrepo-com 1.png"
+          alt="Kalender"
+          class="kalender"
+        />
+        <input type="text" id="datepicker" style="display: none" />
+        <div class="tombol">ADD</div>
+      </div>
+
+      <div class="container-user">
+        <div class="item-user active">Agenda yang harus dikerjakan</div>
+        <div class="item-user1">Agenda yang sudah dikerjakan</div>
+      </div>
+      <div class="container-user2" id="container-user23">
+        <table>
+          <tr>
+            <th class="nama">Nama agenda</th>
+            <th>priority</th>
+            <th>
+              Ceklist jika sudah <br />
+              dikerjakan
+            </th>
+            <th>
+              <img
+                src="filter-svgrepo-com (3) 1.png"
+                alt=""
+                class="filter-agenda"
+                id="filter-button"
+              />
+            </th>
+          </tr>
+          <tr id="todo-list"></tr>
+        </table>
+      </div>
+      <div class="pop-up-selesai" id="pop-up2">
+        agenda sudah dikerjakan ,agenda akan dipindahkan ke daftar selesai
+        <div class="tombol-pindah" id="tombol-pindahkan">Ok</div>
+      </div>
+      <div class="agenda-selesai">
+        <table id="agenda-selesaiid">
+          <tr>
+            <th class="nama">Nama agenda</th>
+            <th></th>
+            <th>tanggal diselesaikan</th>
+          </tr>
+        </table>
+      </div>
+      <div id="tombol-hapus-semua">hapus semua</div>
+      <div id="overlay"></div>
+      <div id="filter-popup">
+        <label for="filter-date-input">Masukkan Tanggal (dd/mm/yyyy):</label>
+        <input type="text" id="filter-date-input" placeholder="dd/mm/yyyy" />
+        <button id="apply-filter">Terapkan Filter</button>
+        <button id="close-popup1">Batal</button>
+        <button id="clear-filter-button">Hapus Filter</button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

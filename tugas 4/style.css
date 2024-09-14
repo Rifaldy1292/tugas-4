@@ -1,0 +1,396 @@
+.data-user {
+  display: flex;
+  width: 70vw;
+  max-width: 1350px;
+  height: 90px;
+  background-color: #d9d9d9;
+  align-items: center;
+  border: solid;
+  border-radius: 10px;
+  border-color: #837878;
+  font-size: 24px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.main {
+  position: relative;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.kolom-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 70vw;
+  max-width: 1350px;
+  background-color: #d9d9d9;
+
+  border: solid;
+  border-radius: 10px;
+  border-color: #837878;
+  height: 135px;
+}
+.untuk-input {
+  display: flex;
+  width: 50vw;
+  height: 90px;
+  background-color: #eaeaea;
+  border-radius: 10px;
+}
+.input-agenda {
+  width: 1038px;
+}
+.untuk-input input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 22px;
+}
+.tombol {
+  width: 100px;
+  height: 89px;
+  background-color: blue;
+  border: solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 28px;
+  margin-left: 10px;
+}
+.kalender {
+  margin-left: 10px;
+}
+.container-user {
+  display: flex;
+  width: 70vw;
+  max-width: 1350px;
+  height: 90px;
+
+  align-items: center;
+
+  font-size: 24px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.container-user2 {
+  display: flex;
+  width: 70vw;
+  max-width: 1350px;
+
+  border-radius: 10px;
+
+  background-color: #d9d9d9;
+  font-size: 24px;
+  justify-content: space-around;
+
+  border: solid;
+  border-color: #837878;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.tombol-low {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 35px;
+  background-color: chartreuse;
+  color: white;
+}
+.tombol-med {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 35px;
+  background-color: rgb(255, 112, 9);
+  color: white;
+}
+.tombol-high {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 35px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+.filter-agenda {
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sampah {
+  width: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.ceklis {
+  width: 30px;
+  height: 30px;
+}
+.kalender {
+  cursor: pointer;
+  width: 50px; /* Sesuaikan ukuran gambar */
+  height: 50px; /* Sesuaikan ukuran gambar */
+}
+.tombol {
+  cursor: pointer;
+}
+#popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pop-up {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 2; /* memastikan pop-up berada di atas elemen lain */
+  display: none;
+}
+
+.tombol2 {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  bottom: 30px;
+  right: 50px;
+  position: absolute;
+}
+#datepicker {
+  visibility: hidden;
+}
+
+.item-user,
+.item-user1 {
+  display: flex;
+  width: 70vw;
+  max-width: 1350px;
+  height: 60px;
+  align-items: center;
+  border: solid;
+  border-radius: 10px;
+  border-color: #837878;
+  font-size: 24px;
+  justify-content: space-around;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item-user {
+  background-color: #d9d9d9;
+}
+
+.item-user1 {
+  background-color: #d9d9d9;
+}
+
+.active {
+  background-color: #a9a9a9; /* Warna yang akan muncul saat aktif */
+}
+.agenda-selesai {
+  margin-top: 20px;
+  display: flex;
+  width: 70vw;
+  max-width: 1350px;
+
+  border-radius: 10px;
+
+  background-color: #d9d9d9;
+  font-size: 24px;
+  justify-content: space-around;
+
+  border: solid;
+  border-color: #837878;
+}
+.hidden {
+  display: none; /* Untuk menyembunyikan elemen */
+}
+.pop-up-selesai {
+  font-size: 18px;
+  display: flex;
+  width: 300px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 2; /* memastikan pop-up berada di atas elemen lain */
+  display: none;
+}
+.tombol-pindah {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  bottom: 20px;
+  right: 30px;
+  position: absolute;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparansi hitam */
+  z-index: 999; /* Pastikan overlay berada di atas semua elemen */
+  display: none; /* Sembunyikan overlay secara default */
+}
+#tombol-hapus-semua {
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  border: solid 5px aliceblue;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#filter-popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+/* CSS untuk tampilan mobile */
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .data-user,
+  .kolom-input,
+  .container-user,
+  .container-user2,
+  .agenda-selesai {
+    width: 90vw;
+    height: auto;
+    max-width: none;
+    font-size: 18px;
+  }
+
+  .untuk-input {
+    width: 80vw;
+    height: auto;
+  }
+
+  .input-agenda {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .tombol {
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .tombol-low,
+  .tombol-med,
+  .tombol-high {
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .pop-up,
+  .pop-up-selesai {
+    width: 90vw;
+    height: auto;
+  }
+
+  .kalender {
+    width: 40px;
+    height: 40px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  td,
+  th {
+    padding: 6px;
+  }
+
+  .tombol-pindah,
+  .tombol2,
+  #tombol-hapus-semua {
+    font-size: 16px;
+    padding: 8px 16px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  #overlay {
+    padding: 0;
+  }
+}
